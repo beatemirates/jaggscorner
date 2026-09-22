@@ -18,7 +18,7 @@ export default function Home() {
   return <main>
     <div className="disclosure"><span>Independent picks. Zero clutter.</span><span>As an Amazon Associate, we earn from qualifying purchases.</span></div>
     <nav className="nav" aria-label="Main navigation">
-      <a className="brand" href="#top" aria-label="Good Finds home">GOOD<span>/</span>FINDS</a>
+      <a className="brand" href="#top" aria-label="Jaggscorner.com home">JAGGS<span>/</span>CORNER.COM</a>
       <div className="navlinks"><a href="#picks">Picks</a><a href="#edit">The Edit</a><a href="#about">Our rules</a></div>
       <a className="navCta" href="#picks">Shop the list <span aria-hidden="true">↗</span></a>
     </nav>
@@ -33,6 +33,6 @@ export default function Home() {
     </section>
     <section className="edit" id="edit"><div className="editIntro"><p className="sectionLabel">THE FOREVER EDIT</p><h2>Small upgrades.<br/><em>Big difference.</em></h2><p>Four low-drama improvements for the way you cook, travel, and keep the lights on.</p></div><div className="editList">{essentials.map(([number,title,copy,query])=><a href={amazonUrl(query)} target="_blank" rel="sponsored noopener" key={title}><span>{number}</span><div><h3>{title}</h3><p>{copy}</p></div><b aria-hidden="true">↗</b></a>)}</div></section>
     <section className="newsletter"><p className="sectionLabel">ONE GOOD EMAIL</p><h2>Seven finds. Every Sunday.<br/>No filler.</h2><form action="#" className="signup"><label className="srOnly" htmlFor="email">Email address</label><input id="email" type="email" placeholder="you@email.com" required/><button type="submit">Join the list <span aria-hidden="true">→</span></button></form><p className="finePrint">Free forever. Unsubscribe whenever.</p></section>
-    <footer><a className="brand light" href="#top">GOOD<span>/</span>FINDS</a><p>Thoughtful things for everyday life.</p><div><a href="#about">How we choose</a><a href="mailto:hello@goodfinds.example">Contact</a></div><small>© 2026 Good Finds. Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates.</small></footer>
+    <footer><a className="brand light" href="#top">JAGGS<span>/</span>CORNER.COM</a><p>Thoughtful things for everyday life.</p><div><a href="#about">How we choose</a><a href="mailto:hello@jaggscorner.com">Contact</a></div><small>© 2026 Jaggscorner.com. Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates.</small></footer>
   </main>;
 }
