@@ -11,8 +11,8 @@ const essentials = [
   ["04", "Soft cooler", "Leak-resistant, shoulder-friendly, and weekend ready.", "soft cooler bag leakproof"],
 ] as const;
 
-// Replace "yourtag-20" with your approved Amazon Associates tracking ID.
-const amazonUrl = (query: string) => `https://www.amazon.com/s?k=${encodeURIComponent(query)}&tag=yourtag-20`;
+// Approved Amazon Associates tracking ID.
+const amazonUrl = (query: string) => `https://www.amazon.com/s?k=${encodeURIComponent(query)}&tag=jaggs20`;
 
 export default function Home() {
   return <main>
